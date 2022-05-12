@@ -8,22 +8,21 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+    var viewModel: GreetingViewModelProtocol! {
+        didSet {
+            self.viewModel.greetingDidChange = { viewModel in
+                self.greetingLabel.text = viewModel.greeting
+            }
+        }
+    }
+    let showGreetingButton = UIButton()
+    let greetingLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.showGreetingButton.addTarget(self.viewModel, action: #selector(showGreeting), for: .touchUpInside)
     }
-
-
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-
+    
+    
 }
