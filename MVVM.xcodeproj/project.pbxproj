@@ -14,7 +14,7 @@
 		49E25F8E282D70B700F93000 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E25F8C282D70B700F93000 /* MainViewController.swift */; };
 		49E25F8F282D70B700F93000 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E25F8D282D70B700F93000 /* MainViewController.xib */; };
 		49E25F91282D70C400F93000 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E25F90282D70C400F93000 /* MainModel.swift */; };
-		49E25F95282D70DD00F93000 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E25F94282D70DD00F93000 /* MainPresenter.swift */; };
+		49E25F9B282D7A9100F93000 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E25F9A282D7A9100F93000 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		49E25F8C282D70B700F93000 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		49E25F8D282D70B700F93000 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		49E25F90282D70C400F93000 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
-		49E25F94282D70DD00F93000 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		49E25F9A282D7A9100F93000 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,8 @@
 			children = (
 				49E25F98282D710900F93000 /* Model */,
 				49E25F97282D710200F93000 /* View */,
-				49E25F99282D710F00F93000 /* Presenter */,
+				49E25F99282D710F00F93000 /* ViewModel */,
+				49E25F9A282D7A9100F93000 /* MainViewModel.swift */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -113,12 +114,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		49E25F99282D710F00F93000 /* Presenter */ = {
+		49E25F99282D710F00F93000 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				49E25F94282D70DD00F93000 /* MainPresenter.swift */,
 			);
-			path = Presenter;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49E25F95282D70DD00F93000 /* MainPresenter.swift in Sources */,
+				49E25F9B282D7A9100F93000 /* MainViewModel.swift in Sources */,
 				49E25F91282D70C400F93000 /* MainModel.swift in Sources */,
 				49E25F8E282D70B700F93000 /* MainViewController.swift in Sources */,
 				496F5D77282D6C9A00E57ED5 /* AppDelegate.swift in Sources */,
