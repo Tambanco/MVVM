@@ -9,20 +9,22 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var greetingLabel: UILabel!
+    
     var viewModel: GreetingViewModelProtocol! {
         didSet {
-            self.viewModel.greetingDidChange = { viewModel in
+            self.viewModel.greetingDidChange = { [unowned self] viewModel in
                 self.greetingLabel.text = viewModel.greeting
             }
         }
     }
-    let showGreetingButton = UIButton()
-    let greetingLabel = UILabel()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.showGreetingButton.addTarget(self.viewModel, action: #selector(showGreeting), for: .touchUpInside)
+        
     }
     
-    
+    @IBAction func showGreetingTapped(_ sender: UIButton) {
+        self.viewModel.showGreeting()
+    }
 }
