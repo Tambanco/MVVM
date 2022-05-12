@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
     
     var viewModel: GreetingViewModelProtocol! {
         didSet {
-            self.viewModel.greetingDidChange = { [unowned self] viewModel in
+            self.viewModel.greetingDidChange = {  viewModel in
                 self.greetingLabel.text = viewModel.greeting
             }
         }
