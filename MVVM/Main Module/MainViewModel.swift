@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol MainViewModelProtocol: AnyObject {
+    init(person: Person)
+    func setGreeting()
+}
