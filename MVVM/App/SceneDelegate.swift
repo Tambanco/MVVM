@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let model = Person(firstName: "Garry", secondName: "Oldman")
         let viewModel = MainViewModel(person: model)
         let mainVC = MainViewController()
-        
+        mainVC.viewModel = viewModel
         let navBar = UINavigationController(rootViewController: mainVC)
         window?.rootViewController = navBar
         window?.makeKeyAndVisible()

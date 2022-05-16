@@ -31,6 +31,6 @@ class MainViewModel: MainViewModelProtocol {
     }
     
     func setGreeting() {
-        self.greeting = "\(person.firstName)" + "\(person.secondName)"
+        self.greeting = "\(person.firstName)" + " " + "\(person.secondName)"
     }
 }
