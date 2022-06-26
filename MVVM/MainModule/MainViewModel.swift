@@ -8,6 +8,7 @@
 import Foundation
 
 protocol GreetingViewModelProtocol: AnyObject {
+    
     var greeting: String? { get }
     var greetingDidChange: ((GreetingViewModelProtocol) -> ())? { get set }
     init(person: Person)

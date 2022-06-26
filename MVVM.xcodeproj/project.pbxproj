@@ -89,36 +89,12 @@
 		49E25F96282D70E500F93000 /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
-				49E25F98282D710900F93000 /* Model */,
-				49E25F97282D710200F93000 /* View */,
-				49E25F99282D710F00F93000 /* ViewModel */,
+				49E25F90282D70C400F93000 /* MainModel.swift */,
+				49E25F8C282D70B700F93000 /* MainViewController.swift */,
+				49E25F8D282D70B700F93000 /* MainViewController.xib */,
 				49E25F9A282D7A9100F93000 /* MainViewModel.swift */,
 			);
 			path = MainModule;
-			sourceTree = "<group>";
-		};
-		49E25F97282D710200F93000 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				49E25F8C282D70B700F93000 /* MainViewController.swift */,
-				49E25F8D282D70B700F93000 /* MainViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		49E25F98282D710900F93000 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				49E25F90282D70C400F93000 /* MainModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		49E25F99282D710F00F93000 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
